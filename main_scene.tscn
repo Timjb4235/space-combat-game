@@ -1,9 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://c3dguwjjh08xh"]
+[gd_scene load_steps=7 format=3 uid="uid://c3dguwjjh08xh"]
 
 [ext_resource type="Script" path="res://main_scene.gd" id="1_p7yvf"]
 [ext_resource type="PackedScene" uid="uid://c02hma4n7hhws" path="res://Player.tscn" id="2_onhol"]
+[ext_resource type="Texture2D" uid="uid://doopdvqpl0o1n" path="res://HDR_blue_nebulae-1.hdr" id="3_2lr2o"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_wg50t"]
+panorama = ExtResource("3_2lr2o")
 
 [sub_resource type="Sky" id="Sky_pcryk"]
 sky_material = SubResource("PanoramaSkyMaterial_wg50t")
