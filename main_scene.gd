@@ -2,7 +2,8 @@ extends Node3D
 
 
 func _ready() -> void:
-	_create_boundary(1000)
+	pass
+	# _create_boundary(1000)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -10,6 +11,7 @@ func _process(delta: float) -> void:
 	pass
 
 func _create_boundary(size: float, thickness: float = 1.0):
+	# Used purely for internal testing
 	var sides := [
 		{ "normal": Vector3.LEFT },
 		{ "normal": Vector3.RIGHT },
