@@ -16,13 +16,14 @@ func _ready():
 	var mesh := SphereMesh.new()
 	mesh.radius = particle_size
 	mesh.height = particle_size * 2
-	mesh.radial_segments = 4
-	mesh.rings = 2
+	# Make the following numbers lower to increase performance:
+	mesh.radial_segments = 8
+	mesh.rings = 4
 	
 	var material = StandardMaterial3D.new()
 	material.albedo_color = Color(0.0, 0.0, 0.5)
 	material.emission_enabled = true
-	material.emission = Color(0.2, 0.4, 1.0)
+	material.emission = Color(0.1, 0.2, 0.8)
 	material.emission_energy = 0.6    
 	mesh.material = material
 

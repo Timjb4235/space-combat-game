@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://dupukjvkvf4yu"]
+
+[ext_resource type="Script" path="res://menus/host_lobby.gd" id="1_actwl"]
+
+[node name="HostLobby" type="Node2D"]
+script = ExtResource("1_actwl")
+
+[node name="TotalPlayersLabel" type="Label" parent="."]
+offset_left = 125.75
+offset_top = 90.75
+offset_right = 165.75
+offset_bottom = 113.75
+text = "Total Players:"
+
+[node name="PlayersCounter" type="SpinBox" parent="."]
+offset_left = 244.0
+offset_top = 91.0
+offset_right = 327.062
+offset_bottom = 122.0
+max_value = 10.0
+value = 1.0
+editable = false
+
+[node name="StartButton" type="Button" parent="."]
+offset_left = 162.75
+offset_top = 159.75
+offset_right = 170.75
+offset_bottom = 167.75
+text = "Start
+"
