@@ -4,9 +4,11 @@ extends Node2D
 func _ready() -> void:
 	multiplayer.peer_connected.connect(_on_peer_connected)
 	$StartButton.pressed.connect(_on_start_button_pressed)
-
-func _on_peer_connected() -> void:
+	
+func _on_peer_connected(peer_id: int) -> void:
+	print('success!')
 	$PlayersCounter.value = $PlayersCounter.value + 1
+
 
 @rpc("any_peer", "call_local", "reliable")
 func _load_main_scene() -> void:

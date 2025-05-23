@@ -30,7 +30,8 @@ func _join_game() -> void:
 	var result = peer.create_client(_target_ip, 12345)
 	print(result)
 	multiplayer.multiplayer_peer = peer
-	print("Connecting to server at %s...", _target_ip)
+	print("Connecting to server at %s...")
+	print(_target_ip)
 	
 func _load_main_scene() -> void:
 	var main_scene = load("res://main_scene.tscn")
